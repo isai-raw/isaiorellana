@@ -7,7 +7,7 @@ header p {
   margin-left: 10px;
 }
 
-button {
+.menu {
   display: none;
 }
 header nav {
