@@ -131,6 +131,7 @@ main {
 .intro-isai .isai-titulo h2 {
   font-size: 2.4rem;
   line-height: 2.4rem;
+  text-align: right;
 }
 .intro-isai .isai-titulo p {
   font-size: 1.4rem;
