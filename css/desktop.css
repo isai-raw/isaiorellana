@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header p {
+  margin-left: 10px;
+}
+
+button {
+  display: none;
+}
+header nav {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.hide {
+  display: block;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.portafolio-slider .slider-imgs {
+  width: 510px;
+}
