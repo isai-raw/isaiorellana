@@ -99,6 +99,7 @@ header button {
 main {
   background-color: var(--layout);
   width: 100%;
+  padding-bottom: 10px;
 }
 
 .section-1 {
@@ -192,8 +193,8 @@ main {
 .portafolio-slider .slider-imgs {
   display: grid;
   grid-template-rows: 325px;
-  column-gap: 10px;
-  width: 810px;
+  grid-template-columns: 25px 260px 260px 260px 260px 25px;
+  width: 520px;
   overflow: hidden;
   border-radius: 8px;
   justify-content: center;
@@ -201,47 +202,35 @@ main {
 
 .img-1 {
   grid-row: 1 / 2;
-  grid-column: 1 /2;
-  margin-left: 800px;
-  animation: slide 7s linear infinite;
+  grid-column: 1 / 6;
+  animation: slide 16s linear infinite;
 }
-@keyframes slide {
-  from {
-    margin-left: 800px;
-  }
-  to {
-    margin-left: 0px;
-  }
-}
-@keyframes slide2 {
-  from {
-    margin-right: 0px;
-  }
-  to {
-    margin-right: 800px;
-  }
-}
-
 .img-2 {
   grid-row: 1 / 2;
-  grid-column: 2 / 3;
+  grid-column: 1 / 6;
+  animation: slide 16s linear infinite;
+  animation-delay: 4s;
 }
 .img-3 {
   grid-row: 1 / 2;
-  grid-column: 3 / 4;
+  grid-column: 1 / 6;
+  animation: slide 16s linear infinite;
+  animation-delay: 8s;
 }
 .img-4 {
   grid-row: 1 / 2;
-  grid-column: 4 / 5;
+  grid-column: 1 / 6;
+  animation: slide 16s linear infinite;
+  animation-delay: 12s;
 }
-.img-5 {
-  grid-row: 1 / 2;
-  grid-column: 5 / 6;
-}
-.img-6 {
-  grid-row: 1 / 2;
-  grid-column: 6 / 7;
-  animation: slide2 7s linear infinite;
+
+@keyframes slide {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 1090px;
+  }
 }
 
 .portafolio-slider img {
@@ -264,13 +253,18 @@ main {
 }
 .portafolio-slider .portafolio-slider--button a {
   text-decoration: none;
+  color: var(--black);
+}
+.portafolio-slider .portafolio-slider--button a:hover {
+  color: var(--blue);
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .portafolio-slider .portafolio-slider--button h2 {
   font-size: 2.4rem;
   line-height: 2.4rem;
   text-align: center;
-  color: var(--black);
 }
 
 /* SECCION 2 */
@@ -329,26 +323,26 @@ h2 {
 .home-cards--img-1 {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
-  animation: slide-cards 6s linear infinite;
+  animation: slide-cards 10s linear infinite;
 }
 .home-cards--img-2 {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
-  animation: slide-cards 6s linear infinite;
-  animation-delay: 2s;
+  animation: slide-cards 10s linear infinite;
+  animation-delay: 3.333333s;
 }
 .home-cards--img-3 {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
-  animation: slide-cards 6s linear infinite;
-  animation-delay: 4s;
+  animation: slide-cards 10s linear infinite;
+  animation-delay: 6.6666666s;
 }
 
 .home-cards--img-4 {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
-  animation: slide-cards 6s linear infinite;
-  animation-delay: 8s;
+  animation: slide-cards 10s linear infinite;
+  animation-delay: 9.9999s;
 }
 
 .section-2 img {
@@ -385,6 +379,12 @@ h2 {
   text-decoration: none;
   color: var(--black);
 }
+.button-vermas a:hover {
+  color: var(--blue);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
 .card-contacto {
   width: 95%;
   max-width: 350px;
@@ -457,4 +457,42 @@ h2 {
   border: none;
   padding: 0px 5px 0px 5px;
   background-color: var(--red);
+}
+
+.card-contacto button:hover {
+  color: var(--blue);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: var(--red);
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--black);
+  line-height: 3rem;
+  margin: 0px 0px 0px 10px;
+}
+footer ul li:hover {
+  color: var(--blue);
+}
+
+footer .linea {
+  width: 2px;
+  margin: 5px;
+  background-color: var(--black);
+}
+
+.footer-rigth ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
