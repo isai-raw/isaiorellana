@@ -363,6 +363,9 @@ h2 {
   font-size: 1.4rem;
   padding: 10px;
 }
+.home-card p span {
+  font-weight: 700;
+}
 
 .button-vermas {
   display: flex;
