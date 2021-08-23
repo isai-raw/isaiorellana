@@ -476,6 +476,9 @@ footer {
   width: 100%;
   background-color: var(--red);
 }
+footer a {
+  text-decoration: none;
+}
 
 footer ul li {
   display: inline-block;

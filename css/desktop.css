@@ -14,6 +14,8 @@ header nav {
   width: auto;
   height: auto;
   position: relative;
+  background-color: transparent;
+  backdrop-filter: none;
 }
 .hide {
   display: block;
@@ -21,4 +23,104 @@ header nav {
 header nav ul li {
   display: inline;
   margin-right: 10px;
+}
+
+.galery-img-container--square {
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 310px 70px;
+}
+
+.galery-img-container--square .galery {
+  width: 60px;
+  height: 60px;
+}
+
+.galery-img-container--square .pos-1 {
+  width: 300px;
+  height: 300px;
+  left: 10px;
+  top: 5px;
+  animation: move-25 0.5s linear;
+}
+.galery-img-container--square .pos-2 {
+  bottom: 5px;
+  left: 250px;
+  animation: move-21 0.5s linear;
+}
+.galery-img-container--square .pos-3 {
+  bottom: 5px;
+  left: 170px;
+  animation: move-22 0.5s linear;
+}
+.galery-img-container--square .pos-4 {
+  bottom: 5px;
+  left: 90px;
+  animation: move-23 0.5s linear;
+}
+.galery-img-container--square .pos-5 {
+  bottom: 5px;
+  left: 10px;
+  animation: move-24 0.5s linear;
+}
+
+@keyframes move-21 {
+  from {
+    width: 300px;
+    height: 300px;
+    top: 5px;
+    left: 5px;
+  }
+  to {
+    width: 70px;
+    height: 70px;
+    top: 315px;
+    left: 250px;
+  }
+}
+
+@keyframes move-22 {
+  from {
+    top: 315px;
+    left: 250px;
+  }
+  to {
+    bottom: 5px;
+    left: 170px;
+  }
+}
+@keyframes move-23 {
+  from {
+    bottom: 5px;
+    left: 170px;
+  }
+  to {
+    bottom: 5px;
+    left: 90px;
+  }
+}
+@keyframes move-24 {
+  from {
+    bottom: 5px;
+    left: 90px;
+  }
+  to {
+    bottom: 5px;
+    left: 10px;
+  }
+}
+@keyframes move-25 {
+  from {
+    width: 50px;
+    height: 50px;
+    top: 315px;
+    left: 10px;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+    top: 5px;
+    left: 5px;
+  }
 }
