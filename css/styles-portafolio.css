@@ -105,8 +105,10 @@ main {
 .section-1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .galery-container {
@@ -207,6 +209,15 @@ main {
     transform: scale(1, 1);
     margin-top: 20px;
     margin-bottom: 5px;
+  }
+}
+@media (min-width: 1800px) {
+  .galery-container {
+    transform: scale(1.4, 1.4);
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
