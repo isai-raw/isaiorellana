@@ -1,0 +1,275 @@
+:root {
+  --layout: #2c2c2c;
+  --cards: #3c3838;
+  --red: #bf0f1e;
+  --blue: #008bb9;
+  --black: #0d0d0d;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--white);
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--red);
+}
+
+header p {
+  width: fit-content;
+  margin-left: 10px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+header p span {
+  font-weight: 300;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--black);
+}
+header nav {
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: #7e7e7e2f;
+  backdrop-filter: blur(2px);
+}
+
+header nav ul li {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  list-style-type: none;
+  text-align: center;
+}
+header nav ul li:hover {
+  color: var(--blue);
+  transition: all 0.2s;
+}
+.hide {
+  display: none;
+}
+header button {
+  cursor: pointer;
+  position: fixed;
+  z-index: 2;
+  top: 3px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+.menu {
+  background: url(../assets/Menu.svg) center no-repeat;
+  background-size: 95%;
+  transition: background 0.5s, background-color 0s;
+}
+.equis {
+  background: url(../assets/equis.svg) center no-repeat;
+  background-size: 95%;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: var(--layout);
+}
+
+.comercial-title {
+  display: block;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  top: 10px;
+  background-color: var(--blue);
+  border-radius: 8px;
+}
+.articulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+article {
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  /* background-color: var(--cards); */
+  border-radius: 8px;
+  margin: 0px 5px 10px 5px;
+}
+article h3 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+.blue-subtitle {
+  padding: 0;
+  font-size: 1.6rem;
+  color: var(--blue);
+  font-weight: 600;
+  font-style: italic;
+}
+
+article p {
+  padding: 5px;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+article img {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 8px;
+}
+
+/* CONTACTo */
+.contacto-title {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.card-contacto {
+  width: 95%;
+  max-width: 350px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: var(--cards);
+  border-radius: 8px;
+}
+
+.card-contacto p {
+  font-size: 1.4rem;
+}
+.card-contacto p a {
+  color: #00ff19;
+  text-decoration: none;
+}
+
+.card-contacto form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.card-contacto label {
+  font-size: 1.4rem;
+}
+
+.card-contacto div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0px 0px 10px 0px;
+}
+.card-contacto div input {
+  background-color: var(--layout);
+  margin-left: 5px;
+  width: 70%;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+  color: gray;
+}
+
+.card-contacto .mensaje {
+  flex-direction: column;
+  align-content: center;
+  margin: 0px 0px 10px 0px;
+}
+.card-contacto .mensaje label {
+  margin-left: 5px;
+}
+
+.card-contacto .mensaje textarea {
+  width: 100%;
+  max-width: 340px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--layout);
+  color: gray;
+  border: none;
+}
+.card-contacto button {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+  width: 76px;
+  border-radius: 8px;
+  border: none;
+  padding: 0px 5px 0px 5px;
+  background-color: var(--red);
+}
+
+.card-contacto button:hover {
+  color: var(--blue);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: var(--red);
+}
+footer a {
+  text-decoration: none;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--black);
+  line-height: 3rem;
+  margin: 0px 0px 0px 10px;
+}
+footer ul li:hover {
+  color: var(--blue);
+}
+
+footer .linea {
+  width: 2px;
+  margin: 5px;
+  background-color: var(--black);
+}
+
+.footer-rigth ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Bienvenido a mi página web, aquí podrás ver mi trabajo y los detalles de los servicios que ofrezco.">
+  <meta name="author" content="Isai Orellana">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="./css/styles-servicios.css">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 920px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+  <title>Inicio | ISAIORELLANA</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <p>ISAI<span>ORELLANA</span></p>
+    </a>
+    <nav id="navegador" class="nav hide">
+      <ul>
+        <a href="index.html">
+          <li>INICIO</li>
+        </a>
+        <a href="portafolio.html">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="servicios.html">
+          <li>SERVICIOS</li>
+        </a>
+        <a href="sobremi.html">
+          <li>SOBRE MI</li>
+        </a>
+        <a href="contacto.html">
+          <li>CONTACTO</li>
+        </a>
+      </ul>
+    </nav>
+    <button class="menu" id="btnMenu" onclick="menu()"></button>
+  </header>
+
+  <main>
+    <section class="comercial-section">
+      <div class="comercial-title"><h2>FOTOGRAFIA COMERCIAL</h2></div>
+
+      <div class="articulos">
+        <article>
+          <h3>
+            Sesiones de fotografía de Productos.
+          </h3>
+          <p class="blue-subtitle">Lleva la imagen de tu negocio a otro nivel.</p>
+          <p>No hay mejor manera de darle publicidad a tu marca que con imágenes con una producción profesional que llame la
+            atención.</p>
+          <img src="./assets/avocados.jpg" alt="">
+        </article>
+        
+        <article>
+          <h3>
+            Sesiones de fotografía de servicios.
+          </h3>
+          <p class="blue-subtitle">Muéstrales a tus clientes como trabajas.</p>
+          <p>El esfuerzo que realizas en cada trabajo merece ser visto con imágenes que reflejen la calidad de tu servicio.</p>
+          <img src="./assets/maquillaje-horizontal.jpg" alt="">
+        </article>
+        
+        <article>
+          <h3>
+            Sesiones de fotografía de gastronómica.
+          </h3>
+          <p class="blue-subtitle">Mejora la presentación de tu menú.</p>
+          <p>Si tienes un restaurante sabrás de la importancia de la presentación en cada platillo, antoja a tus clientes con
+            imágenes que realcen tu plato.</p>
+          <img src="./assets/chuleta.jpg" alt="">
+        </article>
+      </div>
+
+    </section>
+
+    <section class="social-section">
+      <div class="comercial-title">
+        <h2>FOTOGRAFIA SOCIAL</h2>
+      </div>
+    
+      <div class="articulos">
+        <article>
+          <h3>
+            Retratos
+          </h3>
+          <p>Si tienes un restaurante sabrás de la importancia de la presentación en cada platillo, antoja a tus clientes con
+            imágenes que realcen tu plato.</p>
+          <img src="./assets/keren.jpg" alt="">
+        </article>
+        
+        <article>
+          <h3>
+            Eventos
+          </h3>
+          <p>Momentos únicos merecen fotografías únicas, disfruta de tu evento al máximo y como recuerdo tendrás muy buenas
+            fotos
+            para revivir esos momentos especiales de tu vida.
+          </p>
+          <img src="./assets/graduacion.jpg" alt="">
+        </article>
+      </div>
+    </section>
+
+    <h2 class="contacto-title">Contactame:</h2>
+    <article class="card-contacto">
+      <p>Puedes enviarme un mensaje directo a mi <a
+          href="https://api.whatsapp.com/send?phone=50495497605&app=facebook&entry_point=page_cta">WhatsApp</a>.</p>
+      <p>También puedes enviarme un mensaje a mi correo electrónico:</p>
+      <form id="contacto" action="https://formspree.io/f/mvodvbvp" method="POST" autocomplete="on">
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" name="nombre" required placeholder="Escribe aqui tu nombre">
+        </div>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" required placeholder="Escribe aqui tu apellido">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required placeholder="Escribe aqui tu correo electronico">
+        </div>
+        <div class="mensaje">
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="" cols="30" rows="10" required placeholder="Escribe aqui tu mensaje"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <ul>
+        <a href="index.html">
+          <li>INICIO</li>
+        </a>
+        <a href="portafolio.html">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="servicios.html">
+          <li>SERVICIOS</li>
+        </a>
+        <a href="sobremi.html">
+          <li>SOBRE MI</li>
+        </a>
+        <a href="contacto.html">
+          <li>CONTACTO</li>
+        </a>
+      </ul>
+    </div>
+    <div class="linea"></div>
+    <div class="footer-rigth">
+      <ul>
+        <a href="">
+          <li>Instagram</li>
+        </a>
+        <a href="">
+          <li>Facebook</li>
+        </a>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/nav.js"></script>
+</body>
+
+</html>

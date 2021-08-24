@@ -211,7 +211,7 @@ main {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 1800px) {
+/* @media (min-width: 1800px) {
   .galery-container {
     transform: scale(1.4, 1.4);
     margin-top: 80px;
@@ -219,7 +219,7 @@ main {
     margin-left: 40px;
     margin-right: 40px;
   }
-}
+} */
 
 @keyframes move-1 {
   from {
