@@ -503,4 +503,5 @@ footer .linea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-right: 10px;
 }

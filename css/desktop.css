@@ -126,3 +126,6 @@ header nav ul li {
     left: 5px;
   }
 }
+.articulos article {
+  margin: 0px 10px 10px 10px;
+}

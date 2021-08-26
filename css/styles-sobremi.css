@@ -1,0 +1,276 @@
+:root {
+  --layout: #2c2c2c;
+  --cards: #3c3838;
+  --red: #bf0f1e;
+  --blue: #008bb9;
+  --black: #0d0d0d;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--white);
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--red);
+}
+
+header p {
+  margin-left: 10px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+header p span {
+  font-weight: 300;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--black);
+}
+header nav {
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: #7e7e7e2f;
+  backdrop-filter: blur(2px);
+}
+
+header nav ul li {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  list-style-type: none;
+  text-align: center;
+}
+header nav ul li:hover {
+  color: var(--blue);
+  transition: all 0.2s;
+}
+.hide {
+  display: none;
+}
+header button {
+  position: fixed;
+  z-index: 2;
+  top: 3px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+.menu {
+  background: url(../assets/Menu.svg) center no-repeat;
+  background-size: 95%;
+  transition: background 0.5s, background-color 0s;
+}
+.equis {
+  background: url(../assets/equis.svg) center no-repeat;
+  background-size: 95%;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+/* MAIN */
+
+main {
+  background-color: var(--layout);
+  width: 100%;
+  padding-bottom: 10px;
+}
+.section-1 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.intro-isai {
+  position: relative;
+  padding-right: 10px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 450px;
+  height: 380px;
+  flex-direction: column;
+}
+
+.intro-isai img {
+  position: absolute;
+  width: 308px;
+  top: -7px;
+}
+.intro-isai .isai-titulo {
+  position: relative;
+  margin-top: 20px;
+  text-align: right;
+}
+.intro-isai .isai-titulo h2 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-align: right;
+}
+.intro-isai .isai-titulo p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+@media (max-width: 413px) {
+  .intro-isai img {
+    left: -35px;
+  }
+}
+@media (max-width: 480px) {
+  .intro-isai {
+    height: 200px;
+  }
+  .intro-isai img {
+    width: 260px;
+  }
+}
+
+.first-paragraph {
+  position: relative;
+}
+
+.first-paragraph h2 {
+  width: 100%;
+  font-size: 2.4rem;
+  text-align: center;
+}
+main p {
+  padding: 0px 10px 10px 10px;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-align: justify;
+}
+@media (min-width: 680px) {
+  .section-1 {
+    display: flex;
+  }
+  .intro-isai {
+    width: 40%;
+  }
+  .first-paragraph {
+    width: 60%;
+  }
+}
+
+.section-2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 35% 35%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.isai {
+  width: 180px;
+  height: fit-content;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+.isai img {
+  width: 100%;
+}
+
+.section-2 p {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  justify-self: center;
+  text-align: right;
+}
+.setup {
+  width: 180px;
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  justify-self: end;
+  align-self: center;
+}
+.section-2 .penultimo-txt {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  justify-self: end;
+  text-align: left;
+}
+.section-2 .last {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  justify-self: end;
+  text-align: justify;
+}
+
+@media (min-width: 443px) {
+  .section-2 p {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+  .section-2 .penultimo-txt {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    text-align: right;
+  }
+  .section-2 .last {
+    grid-column: 1 / 4;
+    grid-row: 3 / 5;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: var(--red);
+}
+footer a {
+  text-decoration: none;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--black);
+  line-height: 3rem;
+  margin: 0px 0px 0px 10px;
+}
+footer ul li:hover {
+  color: var(--blue);
+}
+
+footer .linea {
+  width: 2px;
+  margin: 5px;
+  background-color: var(--black);
+}
+
+.footer-rigth ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 10px;
+}
