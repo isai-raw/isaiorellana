@@ -404,6 +404,9 @@ main {
   color: #00ff19;
   text-decoration: none;
 }
+.card-contacto p a:hover {
+  color: #98ffa2;
+}
 
 .card-contacto form {
   display: flex;

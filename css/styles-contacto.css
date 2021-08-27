@@ -28,7 +28,6 @@ header {
 }
 
 header p {
-  width: fit-content;
   margin-left: 10px;
   font-size: 2.4rem;
   font-weight: 700;
@@ -74,7 +73,6 @@ header nav ul li:hover {
   display: none;
 }
 header button {
-  cursor: pointer;
   position: fixed;
   z-index: 2;
   top: 3px;
@@ -98,71 +96,15 @@ header button {
 
 /* MAIN */
 main {
-  width: 100%;
-  padding: 10px 0px 10px 0px;
   background-color: var(--layout);
-}
-
-.comercial-title {
-  display: block;
-  width: fit-content;
-  max-width: 280px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  top: 10px;
-  background-color: var(--blue);
-  border-radius: 8px;
-}
-.comercial-title h2 {
-  font-size: 2.2rem;
-  text-align: center;
-}
-
-.articulos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-article {
-  width: 95%;
-  max-width: 300px;
-  text-align: center;
-  /* background-color: var(--cards); */
-  border-radius: 8px;
-  margin: 0px 5px 10px 5px;
-}
-article h3 {
-  font-size: 2.2rem;
-  line-height: 2.2rem;
-}
-.blue-subtitle {
-  padding: 0;
-  font-size: 1.6rem;
-  color: var(--blue);
-  font-weight: 600;
-  font-style: italic;
-}
-
-article p {
-  padding: 5px;
-  font-size: 1.4rem;
-  text-align: left;
-}
-
-article img {
   width: 100%;
-  margin-top: 5px;
-  border-radius: 8px;
+  padding-bottom: 10px;
 }
-
-/* CONTACTo */
-.contacto-title {
-  text-align: center;
+h2 {
   font-size: 2.4rem;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
 }
 
 .card-contacto {
@@ -170,7 +112,7 @@ article img {
   max-width: 350px;
   padding: 10px;
   margin: 0 auto;
-  background-color: var(--cards);
+  /* background-color: var(--cards); */
   border-radius: 8px;
 }
 
@@ -203,7 +145,7 @@ article img {
   margin: 0px 0px 10px 0px;
 }
 .card-contacto div input {
-  background-color: var(--layout);
+  background-color: var(--cards);
   margin-left: 5px;
   width: 70%;
   border-radius: 8px;
@@ -227,7 +169,7 @@ article img {
   margin: 5px;
   padding: 5px;
   border-radius: 8px;
-  background-color: var(--layout);
+  background-color: var(--cards);
   color: gray;
   border: none;
 }
@@ -247,9 +189,31 @@ article img {
   transform: scale(1.05);
   transition: 0.5s;
 }
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.social-media div {
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+  max-width: 400px;
+}
+.social-media div p {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.social-media div a {
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+}
+.social-media div img {
+  width: 100%;
+}
 /* FOOTER */
-
 footer {
   display: flex;
   justify-content: space-evenly;

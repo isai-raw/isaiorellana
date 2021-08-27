@@ -9,13 +9,13 @@
     content="Bienvenido a mi página web, aquí podrás ver mi trabajo y los detalles de los servicios que ofrezco.">
   <meta name="author" content="Isai Orellana">
   <meta name="robots" content="index,follow">
-  <link rel="stylesheet" href="./css/styles-servicios.css">
+  <link rel="stylesheet" href="./css/styles-contacto.css">
   <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 920px)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,700&display=swap"
     rel="stylesheet">
-  <title>Inicio | ISAIORELLANA</title>
+  <title>Contacto | ISAIORELLANA</title>
 </head>
 
 <body>
@@ -45,7 +45,45 @@
     <button class="menu" id="btnMenu" onclick="menu()"></button>
   </header>
 
+  <main>
 
+    <h2>Contacto:</h2>
+    <article class="card-contacto">
+      <p>Puedes enviarme un mensaje directo a mi <a
+          href="https://api.whatsapp.com/send?phone=50495497605&app=facebook&entry_point=page_cta">WhatsApp</a>.</p>
+      <p>También puedes enviarme un mensaje a mi correo electrónico:</p>
+      <form id="contacto" action="https://formspree.io/f/mvodvbvp" method="POST" autocomplete="on">
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" name="nombre" required placeholder="Escribe aqui tu nombre">
+        </div>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" required placeholder="Escribe aqui tu apellido">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required placeholder="Escribe aqui tu correo electronico">
+        </div>
+        <div class="mensaje">
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="" cols="30" rows="10" required placeholder="Escribe aqui tu mensaje"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </article>
+    <section class="social-media">
+      <div>
+        <p>Puedes encontrarme en Instagram como <a href="">@isaiorellanaa.</a></p>
+        <img src="./assets/instagram.jpg" alt="">
+      </div>
+      <div>
+        <p>Sígueme en mi página de Facebook <a href="">Isai Orellana - Fotografía Digital.</a></p>
+        <img src="./assets/Facebook.jpg" alt="">
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <div class="footer-left">
